@@ -1,0 +1,36 @@
+body {
+  background-color: #c3c3c3;
+  margin: 20px;
+  padding: 0; }
+
+.imgContainer {
+  background-color: goldenrod;
+  margin: auto;
+  width: 100%;
+  height: 100%; }
+
+.main__img img,
+.imgs img {
+  width: 100%; }
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 5px;
+  column-gap: 5px; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; } }
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 500ms ease-in forwards; }
+
+.slideIn {
+  right: -100%;
+  animation: slideIn 700ms ease-in forwards; }
+
+@keyframes slideIn {
+  to {
+    right: 0; } }
